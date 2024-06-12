@@ -38,7 +38,7 @@
 										
 										<p><b>虚拟筛选(virtual screening，VS)也称计算机筛选，即在进行生物活性筛选之前，利用计算机上的分子对接软件模拟目标靶点与候选药物之间的相互作用，计算两者之间的亲和力大小，以降低实际筛选化合物数目，同时提高先导化合物发现效率。</b>
 										<br/><br/>
-									    <b>论文“Knowledge Graph Enhanced Multi-Task Learning for MolecularInteraction”旨在利用多任务学习的方法，结合多个虚拟筛选任务(DTI and CPI prediction)，从大规模的医学知识图谱中来对相关的靶点预测其可能的产生活性的药物。</b></p>
+									    <b>论文“Knowledge Graph Enhanced Multi-Task Learning for Molecular Interaction”旨在利用多任务学习的方法，结合多个虚拟筛选任务(DTI and CPI prediction)，从大规模的医学知识图谱中来对相关的靶点预测其可能的产生活性的药物。</b></p>
 									    <div class="col-12" align="center"><span class="image fit"><img src="../images/self_image/kg_mtl.jpg" alt="" /></span></div>
 										<h2><b>数据预处理</b></h2>
 										<p><b>在实验环境中，我们分别使用Human和C.elegans作为CPI预测任务的数据集。</b></p>
@@ -134,7 +134,16 @@ def eval_cpi_2(y_pred,labels):
 python main.py --loss_mode weighted --variant KG-MTL-C --gpu 1 --cpi_dataset human --dti_dataset drugcentral</pre><br/>
 <h2><b>引用</b></h2>
 <p><b>如果您对我们的工作感兴趣或者使用了我们的代码，欢迎引用我们的工作：</b></p>
-<pre class = "pre">GitHub: https://github.com/xiaomingaaa/KG-MTL. 现在还是私人仓库，不久会公开。
+<pre class = "pre">@ARTICLE{9815157,
+	author={Ma, Tengfei and Lin, Xuan and Song, Bosheng and Yu, Philip S. and Zeng, Xiangxiang},
+	journal={IEEE Transactions on Knowledge and Data Engineering}, 
+	title={KG-MTL: Knowledge Graph Enhanced Multi-Task Learning for Molecular Interaction}, 
+	year={2023},
+	volume={35},
+	number={7},
+	pages={7068-7081},
+	keywords={Drugs;Feature extraction;Task analysis;Diffusion tensor imaging;Knowledge engineering;Semantics;Multitasking;Machine learning;knowledge graph;multi-task learning;drug discovery},
+	doi={10.1109/TKDE.2022.3188154}}
 </pre>
 									    </div>
 								        </div>
